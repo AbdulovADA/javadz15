@@ -28,6 +28,7 @@ public class GameTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void shouldEmptyPlayers() {
 
@@ -36,6 +37,7 @@ public class GameTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void RegisteredPlayers() {
         testGame.register(player1);
@@ -57,6 +59,7 @@ public class GameTest {
         Assertions.assertEquals(expected1, actual1);
 
     }
+
     @Test
     void notRegisteredPlayers() {
         testGame.register(player1);
@@ -75,13 +78,15 @@ public class GameTest {
             testGame.round("Piper", "Rachel");
         });
     }
+
     @Test
     void getPlayer() {
-            Player data = new Player(9, "Sasha", 19);
-            assertEquals(9, data.getId());
-            assertEquals("Sasha", data.getName());
-            assertEquals(19, data.getStrength());
+        Player data = new Player(9, "Sasha", 19);
+        assertEquals(9, data.getId());
+        assertEquals("Sasha", data.getName());
+        assertEquals(19, data.getStrength());
     }
+
     @Test
     void getPlayer2() {
         Player data = new Player();

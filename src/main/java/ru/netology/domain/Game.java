@@ -10,6 +10,7 @@ public class Game {
     public void register(Player player) {
         players.add(player);
     }
+
     public Collection<Player> findAll() {
         return players;
     }
